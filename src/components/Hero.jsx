@@ -20,7 +20,12 @@ export default function Hero() {
           my future me will thank me!
         </span>
       </p>
-      <Button text={"Accept & Begin"} />
+      <Button
+        func={() => {
+          window.location.href = "#generate";
+        }}
+        text={"Accept & Begin"}
+      />
     </div>
   );
 }
